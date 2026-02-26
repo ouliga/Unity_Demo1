@@ -4,7 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.Pool;
 using UnityEngine.UI;
-using static UnityEditor.Progress;
+
 
 public class Information_Item : MonoBehaviour
 {
