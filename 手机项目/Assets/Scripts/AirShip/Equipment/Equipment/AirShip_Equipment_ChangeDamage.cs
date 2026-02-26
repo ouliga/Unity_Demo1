@@ -1,0 +1,16 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class AirShip_Equipment_ChangeDamage : AirShip_Equipment
+{
+    [SerializeField] private int _damage_Change;
+    public override void Initialize_AirShip_Equipment_Buff_Bullet()
+    {
+        AirShip_Bullet_Buff_ChangeDamage airShip_Bullet_Buff_ChangeDamage = new AirShip_Bullet_Buff_ChangeDamage(_damage_Change);
+        if(_airhip_Equipment_Buff_Bullet != null)
+        {
+            _airhip_Equipment_Buff_Bullet.Add_Buff(airShip_Bullet_Buff_ChangeDamage);
+        }
+    }
+}
